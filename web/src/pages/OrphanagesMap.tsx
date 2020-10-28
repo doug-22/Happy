@@ -5,7 +5,7 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 
 
 import mapMarkerImg from '../images/map-marker.svg';
-import mapIconMap from '../utils/mapIconMap';
+import mapIcon from '../utils/mapIcon';
 import api from '../services/api';
 
 import '../styles/pages/orphanage-map.css';
@@ -55,7 +55,7 @@ function OrphanagesMap() {
           return (
             <Marker
               key={orphanage.id}
-              icon={mapIconMap}
+              icon={mapIcon}
               position={[orphanage.latitude, orphanage.longitude]}
 
             >
